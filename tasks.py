@@ -19,7 +19,7 @@ class NewsScraper:
         self.number_of_months = number_of_months
         self.browser = Selenium()
         self.articles = []
-        self.download_dir = "images"  # Directory to store downloaded images
+        self.download_dir = "output/images"
         os.makedirs(self.download_dir, exist_ok=True)
     
     def run(self):
@@ -175,7 +175,7 @@ class NewsScraper:
     def save_to_excel(self, auto_save=False):
         excel = Files()
         try:
-            excel.create_workbook("news_data.xlsx")
+            excel.create_workbook("output/news_data.xlsx")
             excel.create_worksheet("News Data")
             header = ["Title", "Date", "Description", "Image Filename", "Count Search Phrase", "Contains Money"]
             data = [header] + [
