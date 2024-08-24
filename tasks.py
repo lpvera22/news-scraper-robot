@@ -40,7 +40,14 @@ class NewsScraper:
         template = 'https://news.search.yahoo.com/search?p={}&fr2=category:{}'
         url = template.format(self.search_phrase, self.news_category)
         logging.info(f"Opening URL: {url}")
-        self.browser.open_available_browser(url)
+
+
+        options = {
+            "arguments": ["--headless", "--disable-gpu", "--no-sandbox"]
+        }
+        
+        self.browser.open_available_browser(url, options=options)
+        logging.info("Browser opened in headless mode")
 
     def extract_news_articles(self):
         logging.info("Starting to extract news articles")
@@ -51,6 +58,11 @@ class NewsScraper:
             logging.info(f"Processing page {page_count + 1}")
 
             try:
+                html_content = self.browser.get_source()
+                html_file_path = f"output/page_{page_count + 1}.html"
+                with open(html_file_path, "w", encoding="utf-8") as html_file:
+                    html_file.write(html_content)
+                logging.info(f"Saved HTML content of page {page_count + 1} to {html_file_path}")
                 cards = self.browser.find_elements("xpath://div[contains(@class, 'NewsArticle')]")
                 logging.info(f"Found {len(cards)} articles on the page")
 
