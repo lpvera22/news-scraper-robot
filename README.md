@@ -32,19 +32,19 @@ conda activate news-scraper-robot
 ```
 ### Configuration
 The robot configuration is handled through a ```robot.yaml``` file and environment variables or work items passed from Robocorp Cloud.
-## Work Items
+### Work Items
 The robot expects the following work item variables when run in Robocorp Cloud:
 
 - search_phrase: The phrase to search for in Yahoo News.
 - news_category: The category or section of the news (e.g., "World", "Technology").
 - number_of_months: The number of months to filter articles by (e.g., 1 for the current month).
 
-  ### Running the Robot
-  ## Locally with Robocorp Lab
-  - Open the project in Robocorp Lab.
-  - Select the ```robot_spare_bin_python``` task.
-  - Run the robot.
-  ## In Robocorp Cloud
-  - Create a robot in Robocorp Cloud and link it to this GitHub repository.
-  - Configure the work items with the necessary search parameters.
-  - Run the robot from Robocorp Cloud.
+## Running the Robot
+### Locally with Robocorp Lab
+- Open the project in Robocorp Lab.
+- Select the ```robot_spare_bin_python``` task.
+- Run the robot.
+### In Robocorp Cloud
+- Create a robot in Robocorp Cloud and link it to this GitHub repository.
+- Configure the work items with the necessary search parameters.
+- Run the robot from Robocorp Cloud.
