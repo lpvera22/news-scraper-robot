@@ -10,6 +10,7 @@ from time import sleep
 import requests
 import os
 from mimetypes import guess_extension
+from robocorp.tasks import task
 
 class NewsScraper:
     def __init__(self, search_phrase, news_category, number_of_months):
@@ -233,8 +234,7 @@ class NewsRobot:
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 # Task function for Robocorp
+@task
 def robot_spare_bin_python():
     robot = NewsRobot()
     robot.run()
-
-robot_spare_bin_python()
