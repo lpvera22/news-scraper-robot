@@ -1,60 +1,50 @@
-# Template: Python - Minimal
+# News Scraper Robot
 
-This template leverages the new [Python framework](https://github.com/robocorp/robocorp), the [libraries](https://github.com/robocorp/robocorp/blob/master/docs/README.md#python-libraries) from to same project as well.
+This project is a Robocorp robot that automates the process of scraping news articles from Yahoo News based on a search phrase, news category, and time frame. The robot extracts key details from each news article, such as the headline, source, date, description, image, and whether the article contains any monetary values. The scraped data is saved in an Excel file.
 
-The template provides you with the basic structure of a Python project: logging out of the box and controlling your tasks without fiddling with the base Python stuff. The environment contains the most used libraries, so you do not have to start thinking about those right away. 
+## Features
 
-👉 Other templates are available as well via our tooling and on our [Portal](https://robocorp.com/portal/tag/template)
+- **Search and Scrape News Articles**: Automatically searches Yahoo News for articles based on a given search phrase and category.
+- **Filter by Time Frame**: Only retrieves articles within a specified number of months.
+- **Extract Key Information**: Captures the headline, source, publication date, description, and image URL from each article.
+- **Image Downloading**: Downloads article images and saves them with appropriate file extensions.
+- **Excel Report Generation**: Compiles the extracted data into an Excel file with the article details and image filenames.
+- **Robocorp Cloud Integration**: Configured to run on Robocorp Cloud using GitHub integration.
 
-## Running
+## Installation
 
-#### VS Code
-1. Get [Robocorp Code](https://robocorp.com/docs/developer-tools/visual-studio-code/extension-features) -extension for VS Code.
-1. You'll get an easy-to-use side panel and powerful command-palette commands for running, debugging, code completion, docs, etc.
+### Prerequisites
 
-#### Command line
+- [Python 3.x](https://www.python.org/downloads/)
+- [Robocorp Lab](https://robocorp.com/docs/product-manuals/robocorp-lab)
+- [Git](https://git-scm.com/)
 
-1. [Get RCC](https://github.com/robocorp/rcc?tab=readme-ov-file#getting-started)
-1. Use the command: `rcc run`
+### Clone the Repository
 
-## Results
+```bash
+git clone https://github.com/yourusername/news-scraper-robot.git
+cd news-scraper-robot
+```
+### Install Dependencies
+```bash
+conda env create -f conda.yaml
+conda activate news-scraper-robot
+```
+### Configuration
+The robot configuration is handled through a ```robot.yaml``` file and environment variables or work items passed from Robocorp Cloud.
+### Work Items
+The robot expects the following work item variables when run in Robocorp Cloud:
 
-🚀 After running the bot, check out the `log.html` under the `output` -folder.
+- search_phrase: The phrase to search for in Yahoo News.
+- news_category: The category or section of the news (e.g., "World", "Technology").
+- number_of_months: The number of months to filter articles by (e.g., 1 for the current month).
 
-## Dependencies
-
-We strongly recommend getting familiar with adding your dependencies in [conda.yaml](conda.yaml) to control your Python dependencies and the whole Python environment for your automation.
-
-<details>
-  <summary>🙋‍♂️ "Why not just pip install...?"</summary>
-
-Think of [conda.yaml](conda.yaml) as an equivalent of the requirements.txt, but much better. 👩‍💻 With `conda.yaml`, you are not just controlling your PyPI dependencies; you control the complete Python environment, which makes things repeatable and easy.
-
-👉 You will probably need to run your code on another machine quite soon, so by using `conda.yaml`:
-- You can avoid `Works on my machine` -cases
-- You do not need to manage Python installations on all the machines
-- You can control exactly which version of Python your automation will run on 
-  - You'll also control the pip version to avoid dep. resolution changes
-- No need for venv, pyenv, ... tooling and knowledge sharing inside your team.
-- Define dependencies in conda.yaml, let our tooling do the heavy lifting.
-- You get all the content of [conda-forge](https://prefix.dev/channels/conda-forge) without any extra tooling
-
-> Dive deeper with [these](https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-condayaml) resources.
-
-</details>
-<br/>
-
-> The full power of [rpaframework](https://robocorp.com/docs/python/rpa-framework) -libraries is also available on Python as a backup while we implement the new Python libraries.
-
-## What now?
-
-🚀 Now, go get'em
-
-Start writing Python and remember that the AI/LLM's out there are getting really good and creating Python code specifically.
-
-👉 Try out [Robocorp ReMark 💬](https://chat.robocorp.com)
-
-For more information, do not forget to check out the following:
-- [Robocorp Documentation -site](https://robocorp.com/docs)
-- [Portal for more examples](https://robocorp.com/portal)
-- Follow our main [robocorp -repository](https://github.com/robocorp/robocorp) as it is the main location where we developed the libraries and the framework.
+## Running the Robot
+### Locally with Robocorp Lab
+- Open the project in Robocorp Lab.
+- Select the ```robot_spare_bin_python``` task.
+- Run the robot.
+### In Robocorp Cloud
+- Create a robot in Robocorp Cloud and link it to this GitHub repository.
+- Configure the work items with the necessary search parameters.
+- Run the robot from Robocorp Cloud.
