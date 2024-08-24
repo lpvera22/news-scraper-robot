@@ -1,0 +1,10 @@
+2024-08-24 13:33:37,228 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.
+No input work items file found: None
+Downloaded webdriver to: C:\Users\lpver\AppData\Local\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\127.0.6533.119\chromedriver-win32/chromedriver.exe
+Webdriver version taken into use: ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999})
+
+Creating an instance of the Chrome WebDriver.
+Created Chrome browser (version 127.0.6533) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+<p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+Opening url 'https://news.search.yahoo.com/search?p=climate change&fr2=category:news'

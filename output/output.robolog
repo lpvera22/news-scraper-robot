@@ -1,0 +1,642 @@
+V 0.0.4
+T 2024-08-24T16:33:33.033+00:00
+ID 1|9a6c914c-6236-11ef-9359-586d673d6b33
+I "sys.platform=win32"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:34:57) [MSC v.1936 64 bit (AMD64)]"
+M a:"tasks.py"
+SR a|0.016
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.016
+M f:"regular"
+M g:"\nCollecting tasks from: tasks.py\n"
+C f|g|0.016
+M h:"stderr"
+M i:"2024-08-24 13:33:37,228 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.\n"
+C h|i|4.204
+M k:"robot_spare_bin_python"
+M l:"tasks"
+M m:"c:\\Users\\lpver\\robot\\tasks.py"
+P j:k|l|m|e|236
+M n:"METHOD"
+SE j|n|10.967
+M p:"NewsRobot.__init__"
+P o:p|l|m|e|204
+SE o|n|10.967
+M r:"WorkItems.__init__"
+M s:"RPA.Robocorp.WorkItems"
+M t:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\RPA\\Robocorp\\WorkItems.py"
+P q:r|s|t|e|935
+SE q|n|10.967
+M u:"autoload"
+M v:"bool"
+M w:"True"
+EA u|v|w
+M x:"root"
+M y:"NoneType"
+M z:"None"
+EA x|y|z
+M A:"default_adapter"
+M B:"ABCMeta"
+M C:"<class 'RPA.Robocorp.WorkItems.RobocorpAdapter'>"
+EA A|B|C
+M D:"auto_parse_email"
+M E:"dict"
+M F:"{('email.text', '__mail.html'): ('email.body', 'parsedEmail.Body'), 'rawEmail': 'parsedEmail'}"
+EA D|E|F
+M G:"PASS"
+EE n|G|10.967
+EE n|G|10.967
+P H:k|l|m|e|237
+M I:"robot"
+M J:"NewsRobot"
+M K:"<tasks.NewsRobot object at 0x00000205BD129F60>"
+AS H|I|J|K|10.967
+M M:"NewsRobot.run"
+P L:M|l|m|e|207
+SE L|n|10.967
+M O:"NewsRobot.get_work_item_data"
+P N:O|l|m|e|213
+SE N|n|10.967
+M Q:"WorkItems.get_input_work_item"
+P P:Q|s|t|e|1174
+SE P|n|10.967
+M R:"_internal_call"
+M S:"False"
+EA R|v|S
+M T:"No input work items file found: None\n"
+C h|T|10.967
+P U:Q|s|t|e|1201
+M V:"WorkItem"
+M W:"WorkItem(id=0, payload={}, files=0)"
+R U|V|W|10.974
+EE n|G|10.975
+M Y:"WorkItems.get_work_item_variable"
+P X:Y|s|t|e|1385
+SE X|n|10.975
+M Z:"name"
+M 0:"str"
+M 1:"'search_phrase'"
+EA Z|0|1
+M 2:"default"
+M 3:"object"
+M 4:"<object object at 0x00000205BC77B3C0>"
+EA 2|3|4
+M 5:"KeyError: 'Undefined variable: search_phrase'"
+STB 5|10.975
+M 6:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\robocorp\\tasks\\_collect_tasks.py"
+M 7:"collect_tasks"
+M 8:"import_path(path, root=root)"
+TBE 6|214|7|8
+M 9:"pm"
+M aa:"PluginManager"
+M ab:"<robocorp.tasks._customization._plugin_manager.PluginManager object at 0x00000205BA0B76A0>"
+TBV 9|aa|ab
+M ac:"path"
+M ad:"WindowsPath"
+M ae:"WindowsPath('c:/Users/lpver/robot/tasks.py')"
+TBV ac|ad|ae
+M af:"glob"
+TBV af|y|z
+M ag:"_constants"
+M ah:"module"
+M ai:"<module 'robocorp.tasks._constants' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_constants.py'>"
+TBV ag|ah|ai
+M aj:"_hooks"
+M ak:"<module 'robocorp.tasks._hooks' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_hooks.py'>"
+TBV aj|ah|ak
+M al:"task_names_as_set"
+M am:"set"
+M an:"set()"
+TBV al|am|an
+M ao:"accept_task"
+M ap:"function"
+M aq:"<function collect_tasks.<locals>.accept_task at 0x00000205BC64B760>"
+TBV ao|ap|aq
+M ar:"on_func_found"
+M as:"<function collect_tasks.<locals>.on_func_found at 0x00000205BC64B880>"
+TBV ar|ap|as
+M at:"WindowsPath('c:/Users/lpver/robot')"
+TBV x|ad|at
+M au:"task_names"
+M av:"list"
+M aw:"[]"
+TBV au|av|aw
+M ax:"import_path"
+M ay:"spec.loader.exec_module(mod)  # type: ignore[union-attr]"
+TBE 6|105|ax|ay
+TBV ac|ad|ae
+TBV x|ad|at
+M az:"importlib"
+M aA:"<module 'importlib' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\importlib\\\\__init__.py'>"
+TBV az|ah|aA
+M aB:"module_name"
+M aC:"'tasks'"
+TBV aB|0|aC
+M aD:"mod"
+M aE:"<module 'tasks' from 'c:\\\\Users\\\\lpver\\\\robot\\\\tasks.py'>"
+TBV aD|ah|aE
+M aF:"meta_importer"
+M aG:"RewriteHook"
+M aH:"<robocorp.log._rewrite_importhook.RewriteHook object at 0x00000205B94CA650>"
+TBV aF|aG|aH
+M aI:"spec"
+M aJ:"ModuleSpec"
+M aK:"ModuleSpec(name='tasks', loader=<robocorp.log._rewrite_importhook.RewriteHook object at 0x00000205B94CA650>, origin='c:\\\\Users\\\\lpver\\\\robot\\\\tasks.py')"
+TBV aI|aJ|aK
+M aL:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\robocorp\\log\\_rewrite_importhook.py"
+M aM:"exec_module"
+M aN:"exec(co, module.__dict__)"
+TBE aL|197|aM|aN
+M aO:"self"
+TBV aO|aG|aH
+TBV ah|ah|aE
+M aP:"fn"
+TBV aP|ad|ae
+M aQ:"write"
+TBV aQ|v|S
+M aR:"cache_dir"
+M aS:"WindowsPath('C:/Users/lpver/AppData/Local/robocorp/temp/34c572a7c20bb89b/Users/lpver/robot')"
+TBV aR|ad|aS
+M aT:"filter_kind"
+M aU:"FilterKind"
+M aV:"<FilterKind.full_log: 'full'>"
+TBV aT|aU|aV
+M aW:"cache_name"
+M aX:"'tasks-full.cpython-310-log-0.0.25.pyc'"
+TBV aW|0|aX
+M aY:"pyc"
+M aZ:"WindowsPath('C:/Users/lpver/AppData/Local/robocorp/temp/34c572a7c20bb89b/Users/lpver/robot/tasks-full.cpython-310-log-0.0.25.pyc')"
+TBV aY|ad|aZ
+M a0:"co"
+M a1:"code"
+M a2:"<code object <module> at 0x00000205BC707AA0, file \"c:\\Users\\lpver\\robot\\tasks.py\", line 1>"
+TBV a0|a1|a2
+M a3:"source_stat"
+M a4:"stat_result"
+M a5:"os.stat_result(st_mode=33206, st_ino=844424930962545, st_dev=4071885783, st_nlink=1, st_uid=0, st_gid=0, st_size=9667, st_atime=1724515544, st_mtime=1724513681, st_ctime=1724417427)"
+TBV a3|a4|a5
+M a6:"_tree"
+M a7:"Module"
+M a8:"<ast.Module object at 0x00000205BAB6B730>"
+TBV a6|a7|a8
+M a9:"<module>"
+M ba:"robot_spare_bin_python()"
+TBE m|240|a9|ba
+M bb:"__name__"
+TBV bb|0|aC
+M bc:"__doc__"
+TBV bc|y|z
+M bd:"__package__"
+M be:"''"
+TBV bd|0|be
+M bf:"__loader__"
+TBV bf|aG|aH
+M bg:"__spec__"
+TBV bg|aJ|aK
+M bh:"__file__"
+M bi:"'c:\\\\Users\\\\lpver\\\\robot\\\\tasks.py'"
+TBV bh|0|bi
+M bj:"__cached__"
+M bk:"'C:\\\\Users\\\\lpver\\\\AppData\\\\Local\\\\robocorp\\\\temp\\\\34c572a7c20bb89b\\\\Users\\\\lpver\\\\robot\\\\tasks.cpython-310.pyc'"
+TBV bj|0|bk
+M bl:"__builtins__"
+M bm:"{'__name__': 'builtins', '__doc__': \"Built-in functions, exceptions, and other objects.\\n\\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.\", '__package__': '', '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': ModuleSpec(name='builtins', loader=<class '_frozen_importlib.BuiltinImporter'>, origin='built-in'), '__build_class__': <built-in function __build_class__>, '__import__': <built-in function __import__>, 'abs': <built-in function abs>, 'all': <built-in function all>, 'any': <built-in function any>, 'ascii': <built-in function ascii>, 'bin': <built-in function bin>, 'breakpoint': <built-in function breakpoint>, 'callable': <built-in function callable>, 'chr': <built-in function chr>, 'compile': <built-in function compile>, 'delattr': <built-in function delattr>, 'dir': <built-in function dir>, 'divmod': <built-in function divmod>, 'eval': <built-in function eval>, 'exec': <built-in function exec>, 'format': <built-in function format>, 'getattr': <built-in function getattr>, 'globals': <built-in function globals>, 'hasattr': <built-in function hasattr>, 'hash': <built-in function hash>, 'hex': <built-in function hex>, 'id': <built-in function id>, 'input': <built-in function input>, 'isinstance': <built-in function isinstance>, 'issubclass': <built-in function issubclass>, 'iter': <built-in function iter>, 'aiter': <built-in function aiter>, 'len': <built-in function len>, 'locals': <built-in function locals>, 'max': <built-in function max>, 'min': <built-in function min>, 'next': <built-in function next>, 'anext': <built-in function anext>, 'oct': <built-in function oct>, 'ord': <built-in function ord>, 'pow': <built-in function pow>, 'print': <built-in function print>, 'repr': <built-in function repr>, 'round': <built-in function round>, 'setattr': <built-in function setattr>, 'sorted': <built-in function sorted>, 'sum': <built-in function sum>, 'vars': <built-in function vars>, 'None': None, 'Ellipsis': Ellipsis, 'NotImplemented': NotImplemented, 'False': False, 'True': True, 'bool': <class 'bool'>, 'memoryview': <class 'memoryview'>, 'bytearray': <class 'bytearray'>, 'bytes': <class 'bytes'>, 'classmethod': <class 'classmethod'>, 'complex': <class 'complex'>, 'dict': <class 'dict'>, 'enumerate': <class 'enumerate'>, 'filter': <class 'filter'>, 'float': <class 'float'>, 'frozenset': <class 'frozenset'>, 'property': <class 'property'>, 'int': <class 'int'>, 'list': <class 'list'>, 'map': <class 'map'>, 'object': <class 'object'>, 'range': <class 'range'>, 'reversed': <class 'reversed'>, 'set': <class 'set'>, 'slice': <class 'slice'>, 'staticmethod': <class 'staticmethod'>, 'str': <class 'str'>, 'super': <class 'super'>, 'tuple': <class 'tuple'>, 'type': <class 'type'>, 'zip': <class 'zip'>, '__debug__': True, 'BaseException': <class 'BaseException'>, 'Exception': <class 'Exception'>, 'TypeError': <class 'TypeError'>, 'StopAsyncIteration': <class 'StopAsyncIteration'>, 'StopIteration': <class 'StopIteration'>, 'GeneratorExit': <class 'GeneratorExit'>, 'SystemExit': <class 'SystemExit'>, 'KeyboardInterrupt': <class 'KeyboardInterrupt'>, 'ImportError': <class 'ImportError'>, 'ModuleNotFoundError': <class 'ModuleNotFoundError'>, 'OSError': <class 'OSError'>, 'EnvironmentError': <class 'OSError'>, 'IOError': <class 'OSError'>, 'WindowsError': <class 'OSError'>, 'EOFError': <class 'EOFError'>, 'RuntimeError': <class 'RuntimeError'>, 'RecursionError': <class 'RecursionError'>, 'NotImplementedError': <class 'NotImplementedError'>, 'NameError': <class 'NameError'>, 'UnboundLocalError': <class 'UnboundLocalError'>, 'AttributeError': <class 'AttributeError'>, 'SyntaxError': <class 'SyntaxError'>, 'IndentationError': <class 'IndentationError'>, 'TabError': <class 'TabError'>, 'LookupError': <class 'LookupError'>, 'IndexError': <class 'IndexError'>, 'KeyError': <class 'KeyError'>, 'ValueError': <class 'ValueError'>, 'UnicodeError': <class 'UnicodeError'>, 'UnicodeEncodeError': <class 'UnicodeEncodeError'>, 'UnicodeDecodeError': <class 'UnicodeDecodeError'>, 'UnicodeTranslateError': <class 'UnicodeTranslateError'>, 'AssertionError': <class 'AssertionError'>, 'ArithmeticError': <class 'ArithmeticError'>, 'FloatingPointError': <class 'FloatingPointError'>, 'OverflowError': <class 'OverflowError'>, 'ZeroDivisionError': <class 'ZeroDivisionError'>, 'SystemError': <class 'SystemError'>, 'ReferenceError': <class 'ReferenceError'>, 'MemoryError': <class 'MemoryError'>, 'BufferError': <class 'BufferError'>, 'Warning': <class 'Warning'>, 'UserWarning': <class 'UserWarning'>, 'EncodingWarning': <class 'EncodingWarning'>, 'DeprecationWarning': <class 'DeprecationWarning'>, 'PendingDeprecationWarning': <class 'PendingDeprecationWarning'>, 'SyntaxWarning': <class 'SyntaxWarning'>, 'RuntimeWarning': <class 'RuntimeWarning'>, 'FutureWarning': <class 'FutureWarning'>, 'ImportWarning': <class 'ImportWarning'>, 'UnicodeWarning': <class 'UnicodeWarning'>, 'BytesWarning': <class 'BytesWarning'>, 'ResourceWarning': <class 'ResourceWarning'>, 'ConnectionError': <class 'ConnectionError'>, 'BlockingIOError': <class 'BlockingIOError'>, 'BrokenPipeError': <class 'BrokenPipeError'>, 'ChildProcessError': <class 'ChildProcessError'>, 'ConnectionAbortedError': <class 'ConnectionAbortedError'>, 'ConnectionRefusedError': <class 'ConnectionRefusedError'>, 'ConnectionResetError': <class 'ConnectionResetError'>, 'FileExistsError': <class 'FileExistsError'>, 'FileNotFoundError': <class 'FileNotFoundError'>, 'IsADirectoryError': <class 'IsADirectoryError'>, 'NotADirectoryError': <class 'NotADirectoryError'>, 'InterruptedError': <class 'InterruptedError'>, 'PermissionError': <class 'PermissionError'>, 'ProcessLookupError': <class 'ProcessLookupError'>, 'TimeoutError': <class 'TimeoutError'>, 'open': <built-in function open>, 'quit': Use quit() or Ctrl-Z plus Return to exit, 'exit': Use exit() or Ctrl-Z plus Return to exit, 'copyright': Copyright (c) 2001-2023 Python Software Foundation.\nAll Rights Reserved.\n\nCopyright (c) 2000 BeOpen.com.\nAll Rights Reserved.\n\nCopyright (c) 1995-2001 Corporation for National Research Initiatives.\nAll Rights Reserved.\n\nCopyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.\nAll Rights Reserved., 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands\n    for supporting Python development.  See www.python.org for more information., 'license': Type license() to see the full license text, 'help': Type help() for interactive help, or help(object) for help about object.}"
+TBV bl|E|bm
+M bn:"logging"
+M bo:"<module 'logging' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\logging\\\\__init__.py'>"
+TBV bn|ah|bo
+M bp:"Selenium"
+M bq:"type"
+M br:"<class 'RPA.Browser.Selenium.Selenium'>"
+TBV bp|bq|br
+M bs:"Files"
+M bt:"<class 'RPA.Excel.Files.Files'>"
+TBV bs|bq|bt
+M bu:"WorkItems"
+M bv:"<class 'RPA.Robocorp.WorkItems.WorkItems'>"
+TBV bu|bq|bv
+M bw:"re"
+M bx:"<module 're' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\re.py'>"
+TBV bw|ah|bx
+M by:"datetime"
+M bz:"<class 'datetime.datetime'>"
+TBV by|bq|bz
+M bA:"timedelta"
+M bB:"<class 'datetime.timedelta'>"
+TBV bA|bq|bB
+M bC:"parser"
+M bD:"<module 'dateutil.parser' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\site-packages\\\\dateutil\\\\parser\\\\__init__.py'>"
+TBV bC|ah|bD
+M bE:"dateutil"
+M bF:"<module 'dateutil' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\site-packages\\\\dateutil\\\\__init__.py'>"
+TBV bE|ah|bF
+M bG:"sleep"
+M bH:"builtin_function_or_method"
+M bI:"<built-in function sleep>"
+TBV bG|bH|bI
+M bJ:"requests"
+M bK:"<module 'requests' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\site-packages\\\\requests\\\\__init__.py'>"
+TBV bJ|ah|bK
+M bL:"os"
+M bM:"<module 'os' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\3b3d1bb_b1f3c24_1c0bc041\\\\lib\\\\os.py'>"
+TBV bL|ah|bM
+M bN:"guess_extension"
+M bO:"<function guess_extension at 0x00000205BC456050>"
+TBV bN|ap|bO
+M bP:"NewsScraper"
+M bQ:"<class 'tasks.NewsScraper'>"
+TBV bP|bq|bQ
+M bR:"<class 'tasks.NewsRobot'>"
+TBV J|bq|bR
+M bS:"<function robot_spare_bin_python at 0x00000205BC64C940>"
+TBV k|ap|bS
+M bT:"robot.run()"
+TBE m|238|k|bT
+TBV I|J|K
+M bU:"run"
+M bV:"search_phrase, news_category, number_of_months = self.get_work_item_data()"
+TBE m|208|bU|bV
+TBV aO|J|K
+M bW:"get_work_item_data"
+M bX:"search_phrase = self.work_item.get_work_item_variable(\"search_phrase\")"
+TBE m|216|bW|bX
+TBV aO|J|K
+M bY:"get_work_item_variable"
+M bZ:"raise KeyError(f\"Undefined variable: {name}\")"
+TBE t|1417|bY|bZ
+M b0:"<RPA.Robocorp.WorkItems.WorkItems object at 0x00000205BD1506D0>"
+TBV aO|bu|b0
+TBV Z|0|1
+TBV 2|3|4
+M b1:"variables"
+M b2:"{}"
+TBV b1|E|b2
+M b3:"value"
+TBV b3|3|4
+ETB 10.981
+M b4:"ERROR"
+EE n|b4|10.983
+P b5:O|l|m|e|220
+M b6:"search_phrase"
+M b7:"'climate change'"
+AS b5|b6|0|b7|10.984
+P b8:O|l|m|e|221
+M b9:"news_category"
+M ca:"'news'"
+AS b8|b9|0|ca|10.984
+P cb:O|l|m|e|222
+M cc:"number_of_months"
+M cd:"int"
+M ce:"1"
+AS cb|cc|cd|ce|10.984
+P cf:O|l|m|e|223
+M cg:"tuple"
+M ch:"('climate change', 'news', 1)"
+R cf|cg|ch|10.985
+EE n|G|10.985
+M cj:"NewsScraper.__init__"
+P ci:cj|l|m|e|15
+SE ci|n|10.985
+EA b6|0|b7
+EA b9|0|ca
+EA cc|cd|ce
+M cl:"Selenium.__init__"
+M cm:"RPA.Browser.Selenium"
+M cn:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\RPA\\Browser\\Selenium.py"
+P ck:cl|cm|cn|e|241
+SE ck|n|10.985
+M cp:"args"
+M cq:"()"
+EA cp|cg|cq
+M cr:"kwargs"
+EA cr|E|b2
+EE n|G|11.038
+EE n|G|11.038
+P cs:M|l|m|e|209
+M ct:"scraper"
+M cu:"<tasks.NewsScraper object at 0x00000205BD152DA0>"
+AS cs|ct|bP|cu|11.038
+M cw:"NewsScraper.run"
+P cv:cw|l|m|e|24
+SE cv|n|11.038
+M cy:"NewsScraper.open_browser"
+P cx:cy|l|m|e|34
+SE cx|n|11.038
+P cz:cy|l|m|e|35
+M cA:"template"
+M cB:"'https://news.search.yahoo.com/search?p={}&fr2=category:{}'"
+AS cz|cA|0|cB|11.038
+P cC:cy|l|m|e|36
+M cD:"url"
+M cE:"'https://news.search.yahoo.com/search?p=climate change&fr2=category:news'"
+AS cC|cD|0|cE|11.038
+M cG:"wrapper"
+M cH:"RPA.Browser.common"
+M cI:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\RPA\\Browser\\common.py"
+P cF:cG|cH|cI|e|33
+SE cF|n|11.038
+M cJ:"(<RPA.Browser.Selenium.Selenium object at 0x00000205BD153370>, 'https://news.search.yahoo.com/search?p=climate change&fr2=category:news')"
+EA cp|cg|cJ
+EA cr|E|b2
+M cK:"Downloaded webdriver to: C:\\Users\\lpver\\AppData\\Local\\robocorp\\webdrivers\\.wdm\\drivers\\chromedriver\\win64\\127.0.6533.119\\chromedriver-win32/chromedriver.exe\n"
+C h|cK|13.808
+M cL:"Webdriver version taken into use: ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999})\n\n"
+C h|cL|13.848
+M cM:"Creating an instance of the Chrome WebDriver.\n"
+C h|cM|13.85
+M cN:"Created Chrome browser (version 127.0.6533) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox\n"
+C h|cN|15.054
+M cO:"<p>Attempted combinations:</p><div class=\"doc\"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)\n</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>\n"
+C h|cO|15.055
+M cP:"Opening url 'https://news.search.yahoo.com/search?p=climate change&fr2=category:news'\n"
+C h|cP|15.056
+P cQ:cG|cH|cI|e|36
+R cQ|cd|ce|16.026
+EE n|G|16.026
+EE n|G|16.026
+M cS:"NewsScraper.extract_news_articles"
+P cR:cS|l|m|e|39
+SE cR|n|16.026
+P cT:cS|l|m|e|40
+M cU:"current_time"
+M cV:"datetime.datetime(2024, 8, 24, 13, 33, 49, 60557)"
+AS cT|cU|by|cV|16.027
+P cW:cS|l|m|e|41
+M cX:"page_count"
+M cY:"0"
+AS cW|cX|cd|cY|16.027
+M c0:"while True"
+P cZ:c0|l|m|e|42
+M c1:"WHILE"
+SE cZ|c1|16.027
+M c3:"Step: while True"
+P c2:c3|l|m|e|42
+M c4:"WHILE_STEP"
+SE c2|c4|16.027
+M c6:"SeleniumLibrary.find_elements"
+M c7:"SeleniumLibrary"
+M c8:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\SeleniumLibrary\\__init__.py"
+P c5:c6|c7|c8|e|771
+SE c5|n|18.032
+M c9:"locator"
+M da:"\"xpath://div[contains(@class, 'NewsArticle')]\""
+EA c9|0|da
+M db:"parent"
+EA db|y|z
+P dc:c6|c7|c8|e|785
+M dd:"[<selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.16\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.17\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.18\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.19\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.20\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.21\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.22\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.23\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.24\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.25\")>]"
+R dc|av|dd|18.032
+EE n|G|18.032
+P de:cS|l|m|e|46
+M df:"cards"
+AS de|df|av|dd|18.032
+M dh:"for card in cards"
+P dg:dh|l|m|e|48
+M di:"FOR"
+SE dg|di|18.032
+M dk:"Step: for card in cards"
+P dj:dk|l|m|e|48
+M dl:"FOR_STEP"
+SE dj|dl|18.032
+M dm:"card"
+M dn:"WebElement"
+M do:"<selenium.webdriver.remote.webelement.WebElement (session=\"0d7e9a1b81f2adfb5d33f95d9d5b67a9\", element=\"f.B209CECA0566C6F908D1B5C0E6BE902A.d.20BFCDEE8C53406C9AFBD3ECD3BE8920.e.16\")>"
+EA dm|dn|do
+M dq:"NewsScraper.get_article"
+P dp:dq|l|m|e|68
+SE dp|n|18.032
+EA dm|dn|do
+M ds:"SeleniumLibrary.find_element"
+P dr:ds|c7|c8|e|754
+SE dr|n|18.032
+M dt:"\"xpath=.//h4[contains(@class, 's-title')]\""
+EA c9|0|dt
+EA db|dn|do
+M du:"ElementNotFound: Element with locator 'xpath=.//h4[contains(@class, 's-title')]' not found."
+STB du|18.053
+TBE 6|214|7|8
+TBV 9|aa|ab
+TBV ac|ad|ae
+TBV af|y|z
+TBV ag|ah|ai
+TBV aj|ah|ak
+TBV al|am|an
+TBV ao|ap|aq
+TBV ar|ap|as
+TBV x|ad|at
+TBV au|av|aw
+TBE 6|105|ax|ay
+TBV ac|ad|ae
+TBV x|ad|at
+TBV az|ah|aA
+TBV aB|0|aC
+TBV aD|ah|aE
+TBV aF|aG|aH
+TBV aI|aJ|aK
+TBE aL|197|aM|aN
+TBV aO|aG|aH
+TBV ah|ah|aE
+TBV aP|ad|ae
+TBV aQ|v|S
+TBV aR|ad|aS
+TBV aT|aU|aV
+TBV aW|0|aX
+TBV aY|ad|aZ
+TBV a0|a1|a2
+TBV a3|a4|a5
+TBV a6|a7|a8
+TBE m|240|a9|ba
+TBV bb|0|aC
+TBV bc|y|z
+TBV bd|0|be
+TBV bf|aG|aH
+TBV bg|aJ|aK
+TBV bh|0|bi
+TBV bj|0|bk
+TBV bl|E|bm
+TBV bn|ah|bo
+TBV bp|bq|br
+TBV bs|bq|bt
+TBV bu|bq|bv
+TBV bw|ah|bx
+TBV by|bq|bz
+TBV bA|bq|bB
+TBV bC|ah|bD
+TBV bE|ah|bF
+TBV bG|bH|bI
+TBV bJ|ah|bK
+TBV bL|ah|bM
+TBV bN|ap|bO
+TBV bP|bq|bQ
+TBV J|bq|bR
+TBV k|ap|bS
+TBE m|238|k|bT
+TBV I|J|K
+M dv:"scraper.run()"
+TBE m|210|bU|dv
+TBV aO|J|K
+TBV b6|0|b7
+TBV b9|0|ca
+TBV cc|cd|ce
+TBV ct|bP|cu
+M dw:"self.extract_news_articles()"
+TBE m|27|bU|dw
+TBV aO|bP|cu
+M dx:"extract_news_articles"
+M dy:"article = self.get_article(card)"
+TBE m|49|dx|dy
+TBV aO|bP|cu
+TBV cU|by|cV
+TBV cX|cd|cY
+TBV df|av|dd
+TBV dm|dn|do
+M dz:"get_article"
+M dA:"headline = self.browser.get_text(self.browser.find_element(\"xpath=.//h4[contains(@class, 's-title')]\", card))"
+TBE m|69|dz|dA
+TBV aO|bP|cu
+TBV dm|dn|do
+M dB:"find_element"
+M dC:"return self._element_finder.find(locator, parent=parent)"
+TBE c8|769|dB|dC
+M dD:"<RPA.Browser.Selenium.Selenium object at 0x00000205BD153370>"
+TBV aO|bp|dD
+TBV c9|0|dt
+TBV db|dn|do
+M dE:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\SeleniumLibrary\\locators\\elementfinder.py"
+M dF:"find"
+M dG:"return self._find(locators[-1], tag, first_only, required, element)"
+TBE dE|93|dF|dG
+M dH:"RobocorpElementFinder"
+M dI:"<RPA.Browser.Selenium.RobocorpElementFinder object at 0x00000205BD152CE0>"
+TBV aO|dH|dI
+TBV c9|0|dt
+M dJ:"tag"
+TBV dJ|y|z
+M dK:"first_only"
+TBV dK|v|w
+M dL:"required"
+TBV dL|v|w
+TBV db|dn|do
+M dM:"element"
+TBV dM|dn|do
+M dN:"locators"
+M dO:"[\"xpath=.//h4[contains(@class, 's-title')]\"]"
+TBV dN|av|dO
+M dP:"_find"
+M dQ:"raise ElementNotFound(f\"{element_type} with locator '{locator}' not found.\")"
+TBE dE|125|dP|dQ
+TBV aO|dH|dI
+TBV c9|0|dt
+TBV dJ|y|z
+TBV dK|v|w
+TBV dL|v|w
+TBV db|dn|do
+M dR:"element_type"
+M dS:"'Element'"
+TBV dR|0|dS
+M dT:"prefix"
+M dU:"'xpath'"
+TBV dT|0|dU
+M dV:"criteria"
+M dW:"\".//h4[contains(@class, 's-title')]\""
+TBV dV|0|dW
+M dX:"strategy"
+M dY:"method"
+M dZ:"<bound method ElementFinder._find_by_xpath of <RPA.Browser.Selenium.RobocorpElementFinder object at 0x00000205BD152CE0>>"
+TBV dX|dY|dZ
+M d0:"constraints"
+TBV d0|E|b2
+M d1:"elements"
+TBV d1|av|aw
+ETB 18.067
+EE n|b4|18.069
+EE n|b4|18.07
+EE dl|b4|18.07
+EE di|b4|18.07
+P d2:cS|l|m|e|66
+M d3:"BREAK"
+SE d2|d3|18.07
+EE c4|G|18.07
+EE c1|G|18.07
+EE n|G|18.07
+M d5:"NewsScraper.save_to_excel"
+P d4:d5|l|m|e|174
+SE d4|n|18.07
+M d6:"auto_save"
+EA d6|v|S
+M d8:"Files.__init__"
+M d9:"RPA.Excel.Files"
+M ea:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\RPA\\Excel\\Files.py"
+P d7:d8|d9|ea|e|180
+SE d7|n|18.071
+EE n|G|18.071
+P eb:d5|l|m|e|175
+M ec:"excel"
+M ed:"<RPA.Excel.Files.Files object at 0x00000205BCBD31C0>"
+AS eb|ec|bs|ed|18.071
+M ef:"Files.create_workbook"
+P ee:ef|d9|ea|e|220
+SE ee|n|18.071
+M eg:"'news_data.xlsx'"
+EA ac|0|eg
+M eh:"fmt"
+M ei:"'xlsx'"
+EA eh|0|ei
+M ej:"sheet_name"
+EA ej|y|z
+P ek:ef|d9|ea|e|308
+M el:"XlsxWorkbook"
+M em:"<RPA.Excel.Files.XlsxWorkbook object at 0x00000205BCBD0160>"
+R ek|el|em|18.075
+EE n|G|18.075
+M eo:"Files.create_worksheet"
+P en:eo|d9|ea|e|539
+SE en|n|18.075
+M ep:"'News Data'"
+EA Z|0|ep
+M eq:"content"
+EA eq|y|z
+M er:"exist_ok"
+EA er|v|S
+M es:"header"
+EA es|v|S
+EE n|G|18.076
+P et:d5|l|m|e|179
+M eu:"['Title', 'Date', 'Description', 'Image Filename', 'Count Search Phrase', 'Contains Money']"
+AS et|es|av|eu|18.076
+P ev:d5|l|m|e|180
+M ew:"data"
+M ex:"[['Title', 'Date', 'Description', 'Image Filename', 'Count Search Phrase', 'Contains Money']]"
+AS ev|ew|av|ex|18.077
+M ez:"Files.append_rows_to_worksheet"
+P ey:ez|d9|ea|e|715
+SE ey|n|18.077
+EA eq|av|ex
+EA Z|0|ep
+EA es|v|S
+M eA:"start"
+EA eA|y|z
+M eB:"formatting_as_empty"
+EA eB|v|S
+P eC:ez|d9|ea|e|786
+R eC|y|z|18.078
+EE n|G|18.078
+M eE:"Files.save_workbook"
+P eD:eE|d9|ea|e|380
+SE eD|n|18.078
+EA ac|y|z
+P eF:eE|d9|ea|e|438
+R eF|y|z|18.124
+EE n|G|18.124
+EE n|G|18.125
+M eH:"NewsScraper.close_browser"
+P eG:eH|l|m|e|196
+SE eG|n|18.125
+M eJ:"BrowserManagementKeywords.close_all_browsers"
+M eK:"SeleniumLibrary.keywords.browsermanagement"
+M eL:"C:\\ProgramData\\robocorp\\ht\\3b3d1bb_b1f3c24_1c0bc041\\lib\\site-packages\\SeleniumLibrary\\keywords\\browsermanagement.py"
+P eI:eJ|eK|eL|e|40
+SE eI|n|18.125
