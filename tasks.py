@@ -64,7 +64,10 @@ class NewsScraper:
                 next_url = self.browser.get_element_attribute(next_button, "href")
                 self.browser.go_to(next_url)
             except Exception:
+                logging.DEBUG('Exception on extract_news_articles: ' + Exception)
                 break
+
+            self.save_to_excel(auto_save=True)
     
     def get_article(self, card):
         headline = self.browser.get_text(self.browser.find_element("xpath=.//h4[contains(@class, 's-title')]", card))
