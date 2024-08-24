@@ -48,11 +48,21 @@ class NewsScraper:
         
         self.browser.open_available_browser(url, options=options)
         logging.info("Browser opened in headless mode")
-
+    def check_and_handle_consent_page(self):
+        try:
+            consent_button_xpath = "//*[@id='consent-page']/div/div/div/form/div[2]/div[2]/button[1]"
+            logging.info("Consent page detected. Clicking the consent button.")
+            self.browser.click_element(consent_button_xpath)
+            sleep(2)  # Esperar um pouco para garantir que a ação seja realizada
+            
+        except Exception as e:
+            logging.error(f"An error occurred while handling the consent page: {e}")
     def extract_news_articles(self):
         logging.info("Starting to extract news articles")
         current_time = datetime.now()
         page_count = 0
+        # Check and handle the consent page at the start
+        self.check_and_handle_consent_page()
         while True:
             sleep(2)  # Allow the page to load
             logging.info(f"Processing page {page_count + 1}")
