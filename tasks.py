@@ -25,7 +25,7 @@ class NewsScraper:
         self.number_of_months: int = number_of_months
         self.browser: Selenium = Selenium()
         self.articles: List[dict] = []
-        self.download_dir: str = 'output/images'
+        self.download_dir: str = 'images'
         os.makedirs(self.download_dir, exist_ok=True)
         logging.info('NewsScraper initialized')
 
@@ -90,13 +90,6 @@ class NewsScraper:
             logging.info('Processing page %d', page_count + 1)
 
             try:
-                # Save the HTML content of the current page
-                html_content: str = self.browser.get_source()
-                html_file_path: str = f'output/page_{page_count + 1}.html'
-                with open(html_file_path, 'w', encoding='utf-8') as html_file:
-                    html_file.write(html_content)
-                logging.info('Saved HTML content of page %d to %s', page_count + 1, html_file_path)
-
                 cards: List = self.browser.find_elements("xpath://div[contains(@class, 'NewsArticle')]")
                 logging.info('Found %d articles on the page', len(cards))
 
