@@ -3,7 +3,6 @@ import os
 import re
 from datetime import datetime, timedelta
 from mimetypes import guess_extension
-from time import sleep
 from typing import List, Optional
 
 import dateutil.relativedelta
@@ -66,7 +65,7 @@ class NewsScraper:
             if self.browser.is_element_visible(consent_button_xpath):
                 logging.info('Consent page detected. Clicking the consent button.')
                 self.browser.click_element(consent_button_xpath)
-                sleep(2)  # Wait to ensure the action is completed
+                self.browser.wait_until_element_is_not_visible(consent_button_xpath, timeout=10)  # Wait to ensure the action is completed
             else:
                 logging.info('Consent page not detected.')
         except Exception as e:
@@ -84,7 +83,7 @@ class NewsScraper:
         self.check_and_handle_consent_page()
 
         while True:
-            sleep(2)  # Allow the page to load
+            self.browser.wait_until_element_is_visible("xpath://div[contains(@class, 'NewsArticle')]", timeout=10)
             logging.info('Processing page %d', page_count + 1)
 
             try:
