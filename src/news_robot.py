@@ -1,7 +1,11 @@
 import logging
 from typing import Tuple
+
 from RPA.Robocorp.WorkItems import WorkItems
+
 from src.news_scraper import NewsScraper
+
+
 class NewsRobot:
     def __init__(self):
         '''

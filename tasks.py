@@ -1,5 +1,7 @@
 import logging
+
 from robocorp.tasks import task
+
 from src.news_robot import NewsRobot
 
 # Configure logging

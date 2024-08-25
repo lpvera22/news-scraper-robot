@@ -4,15 +4,15 @@ import re
 from datetime import datetime, timedelta
 from mimetypes import guess_extension
 from time import sleep
-from typing import List, Optional, Tuple
+from typing import List, Optional
 
-import requests
 import dateutil.relativedelta
-from dateutil import parser
+import requests
 from RPA.Browser.Selenium import Selenium
 from RPA.Excel.Files import Files
-from RPA.Robocorp.WorkItems import WorkItems
-from robocorp.tasks import task
+from dateutil import parser
+
+
 class NewsScraper:
     def __init__(self, search_phrase: str, news_category: str, number_of_months: int):
         '''
@@ -97,7 +97,8 @@ class NewsScraper:
                         link: str = article['clear_link']
                         posted_date: Optional[datetime] = article['date']
 
-                        if link not in [a['clear_link'] for a in self.articles] and posted_date and (current_time - posted_date).days <= 30 * self.number_of_months:
+                        if link not in [a['clear_link'] for a in self.articles] and posted_date and (
+                                current_time - posted_date).days <= 30 * self.number_of_months:
                             logging.info('Adding article: %s', article['title'])
                             self.articles.append(article)
 
@@ -128,11 +129,15 @@ class NewsScraper:
         '''
         logging.info('Extracting article details')
         try:
-            headline: str = self.browser.get_text(self.browser.find_element("xpath=.//h4[contains(@class, 's-title')]", card))
-            source: str = self.browser.get_text(self.browser.find_element("xpath=.//span[contains(@class, 's-source')]", card))
-            posted_text: str = self.browser.get_text(self.browser.find_element("xpath=.//span[contains(@class, 's-time')]", card))
+            headline: str = self.browser.get_text(
+                self.browser.find_element("xpath=.//h4[contains(@class, 's-title')]", card))
+            source: str = self.browser.get_text(
+                self.browser.find_element("xpath=.//span[contains(@class, 's-source')]", card))
+            posted_text: str = self.browser.get_text(
+                self.browser.find_element("xpath=.//span[contains(@class, 's-time')]", card))
             posted_date: Optional[datetime] = self.parse_date(posted_text.replace('.', '').strip())
-            description: str = self.browser.get_text(self.browser.find_element("xpath=.//p[contains(@class, 's-desc')]", card)).strip()
+            description: str = self.browser.get_text(
+                self.browser.find_element("xpath=.//p[contains(@class, 's-desc')]", card)).strip()
 
             raw_link: str = self.browser.get_element_attribute(self.browser.find_element("xpath=.//a", card), 'href')
             unquoted_link: str = requests.utils.unquote(raw_link)
@@ -176,9 +181,11 @@ class NewsScraper:
             elif 'week' in date_str:
                 return current_time - timedelta(weeks=int(re.search(r'(\d+)', date_str).group()))
             elif 'month' in date_str:
-                return current_time - dateutil.relativedelta.relativedelta(months=int(re.search(r'(\d+)', date_str).group()))
+                return current_time - dateutil.relativedelta.relativedelta(
+                    months=int(re.search(r'(\d+)', date_str).group()))
             elif 'year' in date_str:
-                return current_time - dateutil.relativedelta.relativedelta(years=int(re.search(r'(\d+)', date_str).group()))
+                return current_time - dateutil.relativedelta.relativedelta(
+                    years=int(re.search(r'(\d+)', date_str).group()))
             else:
                 return parser.parse(date_str)
         except Exception as e:
@@ -254,7 +261,8 @@ class NewsScraper:
         try:
             excel.create_workbook('output/news_data.xlsx')
             excel.create_worksheet('News Data')
-            header: List[str] = ['Title', 'Date', 'Description', 'Image Filename', 'Count Search Phrase', 'Contains Money']
+            header: List[str] = ['Title', 'Date', 'Description', 'Image Filename', 'Count Search Phrase',
+                                 'Contains Money']
             data: List[List[str]] = [header] + [
                 [
                     article['title'],
@@ -283,6 +291,3 @@ class NewsScraper:
             logging.info('Browser closed successfully')
         except Exception as e:
             logging.error('An error occurred while closing the browser: %s', e)
-
-
-
