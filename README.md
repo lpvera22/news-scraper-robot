@@ -48,3 +48,5 @@ The robot expects the following work item variables when run in Robocorp Cloud:
 - Create a robot in Robocorp Cloud and link it to this GitHub repository.
 - Configure the work items with the necessary search parameters.
 - Run the robot from Robocorp Cloud.
+## Output
+The extracted data will be saved in an Excel file named news_data.xlsx.
